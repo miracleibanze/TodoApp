@@ -1,0 +1,135 @@
+*{
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar-thumb{
+    background: #60a5fa;
+    border-radius: 10px;
+}
+::-webkit-scrollbar{
+    background: #020617;
+}
+
+body{
+  background: linear-gradient(to right, #1e293b, #020617);
+  height: 100vh;
+  padding: 15px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  gap: 1rem;
+}
+header:has(h1){
+  flex-direction: column;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
+  color: #60a5fa;
+  padding: 2rem 0;
+}
+main header h1{
+  font-size: 3rem;
+}
+h1{
+  
+  width: calc(100vw - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent!important;
+  height: 3rem;
+  margin: 0;
+}
+.clock{
+  height: 80%;
+  aspect-ratio: 1/1;
+  margin-left: 1rem;
+  background-image: url('./component/alarm-clock.png');
+  background-size: cover;
+}
+.todo{
+  width: calc(100vw - 40px - 4rem);
+  margin-left: 1rem;
+}
+.todoInput,
+.todoAdd{
+  border-radius: 5px;
+  outline: none;
+  background: none;
+  border: none;
+  background-color: #fff;
+}
+.todoInput{
+  width: 70vw;
+  padding: 0 1rem;
+  flex-grow: 3;
+  flex-shrink: 2;
+  border: 1px solid #020617;
+  box-shadow: 0 0 0 3px #60a5fa, 0 0 2px 5px #60a5fa;
+}
+.todoInput::placeholder {
+  font-size: 1rem;
+  color: black;
+}
+.todoAdd{
+  width: 20vw;
+  min-height: 3rem;
+  font-size: 1.5em;
+  background: #020617;
+  color: #fffffff9;
+  border: 1px solid #60a5fa;
+  box-shadow: 3px 3px 0 0 #60a5fa;
+}
+.todoAdd:hover{
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 0 #60a5fa;
+}
+
+ul{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid #60a5fa;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  margin-top: 10px;
+  color: #fffffff9;
+  
+}
+.actionContainer{
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  padding: 0 1rem;
+}
+.actions{
+  border: 1px solid #60a5fa;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: #fffffff9;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 0 #60a5fa;
+}
+.actions:hover{
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 0 #60a5fa;
+}
